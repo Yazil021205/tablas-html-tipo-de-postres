@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Sara</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #D09CD6 ;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #E7F39A;
+        }
+        td input[type="text"], td textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .image-preview {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabla Sara</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Imágen (Ruta de la imagen)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Crumble de manzana (Estados Unidos, Australia, Nueva Zelanda)
+                    </td>
+                <td>Este es un postre con manzanas picadas al horno, cubiertas con copos de avena y azúcar morena. Los ingredientes generalmente incluyen manzanas cocidas, mantequilla, jugo de limón, azúcar, harina, canela molida y, a menudo, jengibre y/o nuez moscada.></textarea></td>
+                <td><img src="img/banner30" height="40%" width="40%"></td>
+            </tr>
+            <tr>
+                <td>Cheesecake estilo New York (NY, Estados Unidos)</td>
+                <td>El cheesecake estilo New York es diferente a todos los tipos de tartas de queso que existen. Algunos de ellos no son horneados sino  cremosos, densos y algunos se flamean intencionalmente. Este tipo de postre lo aprenderás a preparar en el Programa de Repostería y Pastelería; ya que tiene un par de características que lo convierte en un auténtico pastel de queso clásico, reconocerlos es fácil gracias a su textura: es denso, rico y cremoso. Es probable que tus clientes pidan más de una rebanada.</td>
+                <td><img src="img/banner 52" height="80%" width="80%"></td>
+            </tr>
+            <tr>
+                <td> Brownie (Estados Unidos)</td>
+                <td>Este delicioso postre se creó en Estados Unidos a finales del siglo XIX y desde entonces ha sido muy popular en el mundo. Un brownie  es dulce de chocolate horneado cuadrado o rectangular, lo encuentras con diferentes formas, densidades y rellenos; puede llevar nueces, glaseado, queso crema, chispas de chocolate u otros ingredientes que a menudo son de preferencia del repostero. </td>
+                <td><img src="img/banner17" height="500%" width="50%"></td>
+            </tr>
+           <tr>
+            <td> Angel food (Estados Unidos) </td>
+            <td>El postre Angel Food o pastel de ángel está hecho de azúcar granulada, claras de huevo, vainilla y azúcar glas. Para prepararlo se hace un merengue sencillo y se hornea durante 40 minutos, se caracteriza por tener una miga muy suave y esponjosa y se diferencia de otras tartas porque no utiliza mantequilla. Nació en Estados Unidos y se popularizó gracias a su textura. </td>
+            <td><img src="img/banner12" height="80%" width="80%"></td>
+           </tr>
+            <tr>
+                <td>Pavlova, catalogado como uno de los más ricos del mundo (Australia, Nueva Zelanda)</td>
+                    
+                <td>Su nombre proviene de la bailarina rusa Anna Pavlova y está hecho a base de merengue, con corteza crujiente e interior suave y ligero. En países latinos se puede asociar al merengón colombiano, ya que se adoptó esta receta de forma similar con fruta y crema batida. Este delicioso postre es muy popular en la cocina australiana y neozelandesa, común en celebraciones y épocas festivas.</td>
+                <td><img src="img/banner54" height="80%" width="80%"></td>
+            </tr>
+            <tr>
+                <td>Panna Cotta (Italia)</td>
+                <td>Este es un tipo de postre italiano de crema moldeada, a menudo su guarnición se compone de coulis de frutos del bosque, salsas de caramelo o chocolate, cubierto de frutas o licores. La pannacotta se caracteriza por su sabor y textura, los cuales se deben en gran medida a la crema espesa; por lo tanto, es importante saber que  no debe sustituirse por otro tipo de crema. Esta receta la encuentras en el programa de repostería profesional.</td>
+                <td><img src="img/banner14" width="80%" height="80%"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function displayImage(input) {
+            var preview = input.parentNode.querySelector('.image-preview');
+            preview.src = input.value;
+        }
+    </script>
+</body>
+</html>
+
